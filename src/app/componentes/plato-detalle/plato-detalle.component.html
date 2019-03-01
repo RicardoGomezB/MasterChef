@@ -1,0 +1,19 @@
+<br>
+<h3 class="display-4">Pokémon</h3>
+<br>
+<div class="row container-pokemons">
+  <div class="col-3 container-pokemon" *ngFor='let plato of dataBase.data.recipes'>
+    <div class="container-pokemon1">
+      <div class="row">
+        <div class="col-6">
+          <h4 class="display-5 poke-name">{{plato.name}}</h4>
+        </div>
+        <div class="col-6">
+          <h4 class="display-5 poke-num">{{plato.id}}</h4>
+        </div>
+      </div>
+      <a routerLink='/home/detalle' (click)='onShowDetalle(pokemon.name)'><img src={{pokemon.art_url}} width="100%"
+          height="100%" class="img" data-toggle="tooltip" data-placement="top" title="Click here to see Pokémon's details"></a>
+    </div>
+  </div>
+</div>
