@@ -5,15 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
 
-  data =[
-    {
-      restaurant_info:{
-        name: 'Chef Masters',
-        owner: 'Bordon Damsay',
-        profile_pic: 'https://tinyurl.com/y5aljvpz',
-        description: 'Es un chef, dueño de restaurantes y presentador de televisión británico. En toda su carrera gastronómica ha sido condecorado con 17 estrellas Michelin, de las que hoy mantiene. Además de sus facetas culinarias, Ramsay es conocido por presentar programas de televisión y espacios de telerrealidad sobre cocina, tanto en Reino Unido como en Estados Unidos.'
-      },
-      recipes: [
+  recipes =[
         {
           image: "http://forkgasm.com/images/carbonara.jpg",
           name: "Turnip Noodle Carbonara",
@@ -1586,8 +1578,7 @@ export class DataService {
           ]
         }
       ]
-    }
 
-  ]
+  
   constructor() { }
 }
