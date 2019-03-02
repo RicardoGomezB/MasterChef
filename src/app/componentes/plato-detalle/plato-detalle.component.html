@@ -1,3 +1,9 @@
 
 <h3>Platos</h3>
-<div *ngFor='let plato of data.recipes'>{{plato.name}} <img src="{{plato.image}}" alt="" width="10%"> </div>
+<div >
+  <div class="contenedor" *ngFor='let plato of data.recipes'><img src="{{plato.image}}" alt="" width="10%">
+    <div >{{plato.name}} </div>
+  </div>
+</div>
+
+
