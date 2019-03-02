@@ -33,7 +33,8 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    [RouterModule.forRoot(routes)],
+    [RouterModule.forRoot(routes)]
+    
   ],
   providers: [DataService, DataDetalleService],
   bootstrap: [AppComponent],
