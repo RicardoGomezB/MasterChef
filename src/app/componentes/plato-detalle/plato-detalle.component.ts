@@ -10,10 +10,14 @@ import { DataDetalleService} from 'src/app/services/data-detalle.service';
 export class PlatoDetalleComponent implements OnInit {
 
     data: DataService;
+    recipes
     detalle: DataDetalleService;
-
+    resInfo;
+    
   constructor(service: DataService) { 
     this.data= service;
+    this.recipes = this.data.getRecipes();
+    this.resInfo = this .data.getResInfo();
   }
 
   onShowDetalle(name_plato: String){

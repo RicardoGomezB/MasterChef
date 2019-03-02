@@ -1,6 +1,6 @@
 <body>
 <div class="container" >
-    <div class="box" *ngFor="let plato of data.recipes">
+    <div class="box" *ngFor="let plato of recipes">
         <div class=imgBox>
             <img src="{{plato.image}}" alt="{{plato.name}}">
         </div>
@@ -15,6 +15,7 @@
         </div>
     </div>
 </div>
+<span>{{resInfo.name}}</span>
 </body>
 
 
