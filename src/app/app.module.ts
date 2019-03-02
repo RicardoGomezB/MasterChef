@@ -20,7 +20,8 @@ const routes: Routes = [
     path: 'bienvenida', 
     children:[
   
-      {path: 'bienvenida', component: PrincipalComponent}
+      {path: 'bienvenida', component: PrincipalComponent},
+      {path: 'dec', component: DescripcionComponent}
       
      
     ], component: PrincipalComponent
