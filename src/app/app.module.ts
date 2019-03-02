@@ -9,6 +9,7 @@ import { DataService } from './services/data.service';
 import { DataDetalleService } from './services/data-detalle.service';
 import { PlatoComponent } from './componentes/plato/plato.component';
 import { PrincipalComponent } from './vistas/principal/principal.component';
+import { DescripcionComponent } from './vistas/descripcion/descripcion.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
     path: 'bienvenida', 
     children:[
   
-      {path: '**', component: PrincipalComponent} 
+      {path: '**', component: PrincipalComponent} ,
+      {path: 'descripcion', component: DescripcionComponent}
     ], component: PrincipalComponent
   }
  
@@ -28,7 +30,8 @@ const routes: Routes = [
     AppComponent,
     PlatoDetalleComponent,
     PlatoComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    DescripcionComponent
   ],
   imports: [
     BrowserModule,
