@@ -10,6 +10,7 @@ import { DataDetalleService } from './services/data-detalle.service';
 import { PlatoComponent } from './componentes/plato/plato.component';
 import { PrincipalComponent } from './vistas/principal/principal.component';
 import { DescripcionComponent } from './vistas/descripcion/descripcion.component';
+import { ChefComponent } from './vistas/chef/chef.component';
 
 
 const routes: Routes = [
@@ -43,7 +44,8 @@ const routes: Routes = [
     PlatoDetalleComponent,
     PlatoComponent,
     PrincipalComponent,
-    DescripcionComponent
+    DescripcionComponent,
+    ChefComponent
   ],
   imports: [
     BrowserModule,
