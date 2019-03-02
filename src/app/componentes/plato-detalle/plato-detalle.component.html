@@ -3,13 +3,15 @@
     <div class="box" *ngFor="let plato of data.recipes">
         <div class=imgBox>
             <img src="{{plato.image}}" alt="{{plato.name}}">
+           
         </div>
         <div class="details">
             <div class="content">
                 <h2>{{plato.name}}</h2>
                 <p>{{plato.description}}</p><br>
-                <button type="submit" class="btn btn-warning btn-block " >
+                <button routerLink='/home/detalle' type="submit" class="btn btn-warning btn-block " >
                     Receta!
+                   
                 </button>
             </div>          
         </div>

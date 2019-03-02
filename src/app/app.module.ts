@@ -19,12 +19,24 @@ const routes: Routes = [
     path: 'bienvenida', 
     children:[
   
-      {path: '**', component: PrincipalComponent} ,
-      {path: 'descripcion', component: DescripcionComponent}
+      {path: 'bienvenida', component: PrincipalComponent}
+      
+     
     ], component: PrincipalComponent
+  },
+
+  {
+    path: 'home', 
+    children:[
+      { path: 'home', redirectTo: '/home/detalle', pathMatch: 'full' },
+      {path: 'detalle', component: DescripcionComponent}
+     
+    ], component: DescripcionComponent
   }
  
 ];
+
+
 @NgModule({
   declarations: [
     AppComponent,
