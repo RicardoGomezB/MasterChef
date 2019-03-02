@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="table">
+        <thead>
+            <tr>
+                <th scope="col">Imagen</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Receta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let plato of data.recipes">
+                <td><img src="{{plato.image}}" alt="" width="20%"></td>
+                <td>{{plato.name}}</td>
+                <td>{{plato.description}}</td>
+                <td><button>Ver</button>
+                </td>
+            </tr>
+
+        </tbody>
+    </div>
+</div>
+
