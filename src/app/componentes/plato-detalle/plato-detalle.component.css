@@ -1,8 +1,10 @@
-.contenedor{
-    border-width: 1px;
-    border-color: black;
-    border-radius: 5px;
-    border-style: solid;
-    text-align: center;
-    
+.table th{
+    background-color: black;
+    width: 25%;
+    height: 25%;
+}
+
+.table td img{
+    height: 200px;
+    width: 200px;
 }
