@@ -7,12 +7,14 @@ import { PlatoDetalleComponent } from './componentes/plato-detalle/plato-detalle
 import { DataService } from './services/data.service';
 import { DataDetalleService } from './services/data-detalle.service';
 import { PlatoComponent } from './componentes/plato/plato.component';
+import { ChefInfoComponent } from './componentes/chef-info/chef-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlatoDetalleComponent,
-    PlatoComponent
+    PlatoComponent,
+    ChefInfoComponent
   ],
   imports: [
     BrowserModule,
